@@ -119,11 +119,13 @@ ul li {
 	display: inline;
 	display: flex;
 	align-items: center;
+	cursor: default;
 }
 
 .logo img {
 	display: inline;
 	width: 176px;
+	margin: 0 18px;
 }
 
 .logo span {
@@ -131,18 +133,11 @@ ul li {
 	font-size: 40px;
 	font-family: monospace;
 	font-weight: 700;
+	cursor: default;
 }
 
-.span1 {
-	margin-right: 18px;
-}
-
-.span2 {
-	margin-left: 18px;
-}
-
-.logo a:hover span {
-	color: #DB654B;
+.logo span:hover {
+	cursor: default;
 }
 
 .logo:hover span {
