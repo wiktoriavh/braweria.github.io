@@ -145,6 +145,10 @@ ul li {
 	color: #DB654B;
 }
 
+.logo:hover span {
+    color: #DB654B;
+}
+
 /* NAV */
 
 .nav {
