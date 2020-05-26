@@ -146,7 +146,8 @@ ul li {
 }
 
 .logo:hover span {
-    color: #DB654B;
+	color: #DB654B;
+	cursor: default;
 }
 
 /* NAV */
