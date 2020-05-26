@@ -1,43 +1,246 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* OPEN SANS
+
+font-family: open-sans,sans-serif;
+font-weight: 700;
+font-style: normal;
+
+font-family: open-sans,sans-serif;
+font-weight: 400;
+font-style: italic;
+
+font-family: open-sans,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+*/
+
+
+/***** NORMALISE *****/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-    margin: 60px auto;
-    width: 70%;
+	background: #282423;
+	height: calc(100vh - 90px);
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
+
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+	font-family: open-sans,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	color: #fff;
+	text-align: justify;
+	
+	padding: 0 5px;
+	margin: 32px 0;
 }
+
+h1 {
+	font-family: open-sans,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 40px;
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 60px;
+	
+	margin: 20px 0;
+}
+
+h2 {
+	font-family: open-sans,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	
+	margin: 40px 0;
+}
+
+h3 {
+	font-family: open-sans,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 25px;
+	color: #fff;
+	
+	margin: 20px 0;
+}
+
+h4 {
+	font-family: open-sans,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 20px;
+	color: #DB654B;
+	
+	padding: 0 5px;
+	margin: 20px 0;
+}
+
+.container {
+	width: 1200px;
+	margin: auto;
+}
+
+ul li {
+	font-family: open-sans,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	color: #fff;
+}
+
+/***** NAVBAR *****/
+/* LOGO */
+
+.navbar {
+	width: 100%;
+	position: relative;
+	height: 90px;
+	/*
+	border: 2px solid red;
+	*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	display: inline;
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	display: inline;
+	width: 176px;
+}
+
+.logo span {
+	color: #fff;
+	font-size: 40px;
+	font-family: monospace;
+	font-weight: 700;
+}
+
+.span1 {
+	margin-right: 18px;
+}
+
+.span2 {
+	margin-left: 18px;
+}
+
+.logo a:hover span {
+	color: #DB654B;
+}
+
+/* NAV */
+
+.nav {
+	/*
+	position: absolute;
+	*/
+	display: flex;
+	right: 0;
+}
+
+.nav {
+	list-style-type: none;
+}
+
+.nav li {
+	margin-left: 60px;
+}
+
+.nav a {
+	text-decoration: none;
+	font-family: open-sans,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 16px;
+	color: #fff;
+}
+
+.nav a:hover {
+	color: #DB654B;
+}
+
+/***** CONTENT *****/
+/* HERO */
+
+.hero {
+	padding: 200px 0;
+	background: #B02000;
+}
+
+.hero h1 {
+	width: 40%;
+}
+
+.hero img {
+	display: inline;
+	height: 40px;
+}
+
+
+/* CONTENT */
+
+.intro {
+	padding-top: 136px;
+	margin-bottom: 42px;
+}
+
+main {
+	width: 50%;
+	margin-bottom: 50px;
+}
+
+.todo ul {
+	list-style: none;
+}
+
+.todo li {
+	position: relative;
+	list-style: none;
+	padding-left: 25px;
+	margin-bottom: 20px;
+}
+
+.todo li::before {
+	content:"";
+	background-image: url("../images/Braweria-Pfote-Hell.svg");
+	background-size: cover;
+	background-position: center;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 15px;
+	width: 15px;
+	position: absolute;
+}
+
+
+
+/***** FOOTER *****/
+
 footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+	height: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
+footer i {
+	padding-right: 10px;
 }
