@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Impressum</title>
+	
+	<link rel="stylesheet" href="https://use.typekit.net/hio4mym.css"> <!-- Adobe Fonts -->
+	<link href="../css/main.css" rel="stylesheet" type="text/css"> <!-- Main CSS -->
+	
+</head>
+
+<body>
+	
+	<div class="site">
+	<div class="container">
+	
+		<nav class="navbar">
+			
+			<div class="logo">
+				<span>&lt;</span><a href="index.html"><img src="../images/Braweria-Logo-Red-White.svg" alt="Braweria Logo"></a><span>/&gt;</span>
+			</div>
+				
+			<ul class="nav">
+				<li><a href="https://braweria.de/">Meine Webseite</a></li>
+				<li><a href="https://braweria.de/portfolio/">Portfolio</a></li>
+				<li><a href="https://braweria.de/ueber-mich/">Über Mich</a></li>
+			</ul>
+			
+		</nav>
+	</div> <!-- /container navbar -->
+	
+<div class="container">
+
+<!-- DATENSCHUTZ KOMMT HIER REIN -->
+
+</div>
+
+
+	
+		</div> <!-- /site -->
+		
+	<div class="container">
+		<footer>
+			<ul class="nav">
+					<li><a href="#"><i class="far fa-file-alt"></i>Impressum</a></li>
+					<li><a href="#"><i class="fas fa-user-shield"></i>Datenschutz</a></li>
+			</ul>
+		</footer>
+	</div> <!-- /container footer -->
+		
+</body>
+</html>
