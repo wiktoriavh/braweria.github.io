@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* FIRA SANS und GOOD DOG
+
+font-family: fira-sans,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: gooddog-new,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+
+/**********NAVBAR 1*************/
+
+.navbar {
+	width: 808px;
+	margin: 18px auto;
+	
+}
+
+.topnav {
+	width: 1220px;
+	position: relative;
+	margin: auto;
+}
+
+
+
+.searchform {
+	display: inline-block;
+	position: absolute;
+	margin-left: calc(78px + 118px);
+	top: 37px;
+	display: flex;
+}
+
+.searchform input {
+	width: 400px;
+	height: 52px;
+	border: 5px solid #0A65A2;
+	padding-left: 15px;
+}
+
+.searchform input::placeholder {
+	color: #0A65A2;
+	font-family: gooddog-new,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 17px; 
+	opacity: 50%;
+}
+
+.searchform input:focus {
+	outline: none;
+}
+
+.searchform button {
+	padding: 12px;
+	height: 52px;
+	font-family: gooddog-new,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 22px;
+	color: white;
+	background: #0A65A2;
+	border: none;
+	margin: 0;
+	cursor: pointer;
+	display: flex;
+}
+
+.searchform button .fas {
+	font-size: 28px;
+	padding-right: 12px;
+}
+
+.searchform button:focus {
+	outline: none;
+}
+
+.warenkorb {
+	position: absolute;
+	right: 0;
+	top: calc(62px - 18px);
+	
+	font-family: gooddog-new,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 22px;
+	text-decoration: none;
+	color: #0A65A2;
+}
+
+.warenkorb div {
+	display: inline-block;
+	position: relative;
+}
+
+.warenkorb span {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	align-content: center;
+	text-align: center;
+	background: #FFC400;
+	border-radius: 15px;
+	font-size: 13px;
+	position: absolute;
+	right: 12px;
+	color: #0A38A2;
+}
+
+.warenkorb .fas {
+	font-size: 28px;
+	margin-right: 22px;
+}
+
+
+/**********NAVBAR 2*************/
+
+h4 {
+	font-family: gooddog-new,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 25px;
+	color: #0A65A2;
+}
+
+.navbar ul {
+	display: flex;
+	list-style-type: none;
+	margin-left: -40px;
+	font-size: 34px;
+	justify-content: space-between;
+}
+
+.navbar li a {
+	color: #0A65A2;
+}
+
+.navbar li a:hover {
+	color: #FFC400;
+}
+
+
+/**********CONTENT*************/
+
+main {
+	width: 808px;
+	margin: auto;
+}
+
+.img-text {
+	width: 808px;
+	height: 536px;
+	background: url("../images/steiff-katze.jpg") top right no-repeat;
+	background-size: 995px 661px;
+	text-align: right;
+	padding: 43px 103px;
+	display: flex-row;
+	position: relative;
+}
+
+.img-text h3 {
+	font-family: gooddog-new,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 40px;
+	
+	color: #FFFFFF;
+	text-shadow: 0px 0px 3px #000000;
+}
+
+.img-text a {
+	text-decoration: none;
+	padding: 12px;
+	font-family: gooddog-new,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 25px;
+	color: #0A38A2;
+	background: #FFC400;
+}
+
+.img-text a:hover {
+	background: #FF9100;
+}
+
+.img-text p {
+	color: #FFFFFF;
+	text-shadow: 0px 0px 3px #000000;
+	font-family: gooddog-new,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 17px;
+	width: 290px;
+	position: absolute;
+	right: 103px;
+	margin-top: 40px;
+}
