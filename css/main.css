@@ -105,6 +105,8 @@ a {
 	color: #DB654B;
 }
 
+
+
 /***** NAVBAR *****/
 /* LOGO */
 
@@ -298,3 +300,15 @@ footer i {
 	}
 	
 }
+
+
+.cf2OTb {
+	font-family: open-sans,sans-serif;
+	font-size: 16px;
+	color: #fff;
+	text-align: justify;
+	
+	padding: 0 5px;
+	margin: 32px 0;
+}
+	
