@@ -6,6 +6,22 @@
 <script src="https://kit.fontawesome.com/5659311191.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.typekit.net/hio4mym.css"> <!-- Adobe Fonts -->
 <link href="../css/main.css" rel="stylesheet" type="text/css"> <!-- Main CSS -->
+<link href="../css/sidebar-menu.css" rel="stylesheet" type="text/css"> <!-- Sidebar CSS -->
+    
+    <script>
+
+let isOpen = false;
+
+function toggleMenu() {
+  isOpen = !isOpen;
+  if (isOpen)
+    document.querySelector(".sidemenu").style.left = "0px";
+  else
+    document.querySelector(".sidemenu").style.left = "-450px";
+}
+
+</script>
+    
 </head>
 
 <body>
@@ -14,8 +30,16 @@
 <div class="sidemenu">
     <div class="sidebar">
         <h2>Daily UI Challenges</h2>
-        <p>Test, Test!</p>
+        <ul>
+            <li>
+                Test #1
+            </li>
+            <li>Test # 2</li>
+            <li>Test #3</li>
+        </ul>
     </div>
+    <span class="paw" onclick="toggleMenu()">
+    <img src="../images/Braweria-Pfote-Weiss.svg"></span>
 </div>
 
 {{ content }}
