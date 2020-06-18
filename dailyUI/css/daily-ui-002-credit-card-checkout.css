@@ -1,0 +1,333 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* NAVBAR */
+
+* {
+	box-sizing: border-box;
+	font-family: poppins, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 16px;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+.all {
+	min-height:calc(100vh - 100px);
+}
+
+body {
+	background: #FCFFF3;
+}
+
+.logo {
+	font-family: poppins, sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 50px;
+	color: #396138;
+	margin: auto;
+	letter-spacing: 3.7px;
+}
+
+.navbar {
+/*	border: 2px solid red;*/
+	display: flex;
+	position: relative;
+	width: 1200px;
+	margin: auto;
+}
+
+.navbar ul {
+	display: flex;
+	list-style-type: none;
+	justify-content: space-between;
+}
+
+.top ul {
+	position: absolute;
+	right: 0px;
+}
+
+.navbar li {
+	margin-left: 82px;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown ul {
+	display: block;
+	min-width: max-content;
+}
+
+.dropdown ul li {
+	margin-left: -40px;
+	padding-top: 20px;
+}
+
+button {
+	background: none;
+	border: none;
+	font-size: 16px;
+	color: #396138;
+}
+
+button:focus {
+	outline: none;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background: #396138;
+	border-radius: 10px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-bottom: 20px;
+	margin-top: 18px;
+	border: 2px solid #FCFFF3;
+	z-index: 10;
+}
+
+.dropdown-content::after {
+	background: #396138;
+	border-top-left-radius: 5px;
+	width: 15px;
+	height: 15px;
+	z-index: 11;
+	content:"";
+	position: absolute;
+	top: -7px;
+	left: 40px;
+	transform: rotate(45deg);
+}
+
+.show {
+	display: block;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: #396138;
+}
+
+.dropdown-content a {
+	color: #FCFFF3;
+}
+
+.search {
+	width: 300px;
+	position: relative;
+	height: 44px;
+}
+
+.search input {
+	width: 100%;
+	padding-bottom: 7px;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #396138;
+}
+
+input:focus {
+	outline: none;
+}
+
+.search input::placeholder {
+	color: #396138;
+	font-style: italic;
+}
+
+.search button {
+	position: absolute;
+	top: 3.5px;
+	right: 15px;
+	height: 16px;
+	width: 16px;
+	cursor: pointer;
+}
+/*******************/
+/* WRAPPER CONTENT */
+/*******************/
+
+.wrapper {
+	width: 1200px;
+	margin: auto;
+	display: flex;
+}
+
+.legend {
+	width: 160px;
+	text-align: right;
+}
+
+.legend ul {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 40px;
+}
+
+.legend ul li {
+	margin-bottom: 60px;
+}
+
+.legend a {
+	color: #396138;
+	text-decoration: none;
+}
+
+.legend .fas {
+	font-size: 13px;
+	padding-left: 25px;
+}
+
+.legend .active {
+	font-weight: 700;
+}
+
+.legend .active .fas {
+	font-size: 19px;
+}
+
+.cards {
+	width: 100%;
+	background: #396138;
+	margin-left: 40px;
+	border-radius: 10px;
+}
+.cards .form {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 33px;
+}
+
+.cards .lowerform {
+	margin-bottom: 33px;
+}
+
+.cards .form > button  {
+	color: #FCFFF3;
+	padding: 15px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	margin-left: -15px;
+	width: 100%;
+}
+
+.cards .form > button:hover {
+	background: #FFFFFF1A;
+}
+
+.cards button span, .cards button i {
+	font-size: 21px;
+}
+
+.cards .lowerform {
+	height: 0;
+	overflow: hidden;
+	transition: all 0.5s;
+}
+
+.cards .open {
+	height: 100%;
+	overflow: auto;
+	transition: all 0.5s;
+}
+
+.cards button img {
+	height: 30px;
+	margin-right: 33px;
+	position: absolute;
+}
+
+.cards button i {
+	margin-right: 10px;
+	margin-left: 130px;
+}
+
+.cards label {
+	margin-left: 10px;
+	font-size: 16px;
+	color: #FCFFF3;
+	margin-top: 30px;
+	display: block;
+}
+
+.cards p {
+	margin-left: 10px;
+	font-size: 13px;
+	color: #FCFFF3;
+	margin-top: 47px;
+}
+
+.cards input {
+	width: 372px;
+	height: 44px;
+	background: #FCFFF3;
+	border-radius: 10px;
+	border: none;
+	display: block;
+}
+
+.cards input::placeholder {
+	color: #396138;
+	padding-left: 10px;
+	font-style: italic;
+}
+
+.cards #save {
+	height: 12px;
+	width: 12px;
+}
+
+.cards .save {
+	display: inline-block;
+}
+
+.cards .submit {
+	display: block;
+	margin-top: 30px;
+	width: 372px;
+	height: 44px;
+	background: #FF8B44;
+	border-radius: 10px;
+	
+	text-align: center;
+	font-weight: 700;
+	letter-spacing: 1.6px;
+	color: #361500;
+	
+	cursor: pointer;
+}
+
+.cards .submit:hover {
+	background: #FFAA75;
+}
+
+
+footer {
+	height: 100px;
+	width: 1200px;
+	margin: auto;
+	
+}
+
+footer .navbar {
+	height: 100%;
+}
+
+footer .navbar ul {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+
