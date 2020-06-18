@@ -1,0 +1,133 @@
+---
+layout: post
+title: Credit Card Checkout, #002
+---
+<head>
+	<link href="./css/daily-ui-002-credit-card-checkout.css" rel="stylesheet" type="text/css">
+	<script src="./js/daily-ui-002-credit-card-checkout.js"></script>
+</head>
+<body>
+	
+<div class="all">
+	<nav class="navbar top">
+		<span class="logo">Thirsty Boys</span>
+		<ul>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Kontakt</a></li>
+		</ul>
+	</nav>
+	<nav class="navbar">
+		<ul>
+			<li><div class="dropdown">
+					<button onclick="dropDownSuk()" class="dropbtn">Sukkulenten <i class="fas fa-chevron-down"></i></button>
+					<div id="navbtn-sukkulenten" class="dropdown-content">
+						<ul>
+							<li><a href="#">Kaktus</a></li>
+							<li><a href="#">Dickblattgewächs</a></li>
+							<li><a href="#">Mittagsblumengewächs</a></li>
+						</ul>
+						
+					</div>
+				</div></li>
+			<li><div class="dropdown">
+					<button onclick="dropDownAcs()" class="dropbtn">Accessoires <i class="fas fa-chevron-down"></i></button>
+					<div id="navbtn-accessoires" class="dropdown-content">
+						<ul>
+							<li><a href="#">Töpfe</a></li>
+							<li><a href="#">Bücher</a></li>
+							<li><a href="#">Erde</a></li>
+							<li><a href="#">Sonstiges</a></li>
+						</ul>
+						
+					</div>
+				</div></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Über Uns</a></li>
+			<li class="search"><input type="text" placeholder="Suchen..."> <button><i class="fas fa-search"></i></button></li>
+		</ul>
+	</nav>
+	
+	<div class="wrapper">
+	
+		<div class="legend">
+			<ul>
+				<li><a href="#">Warenkorb <i class="fas fa-circle"></i></a></li>
+				<li><a href="#">Adresse <i class="fas fa-circle"></i></a></li>
+				<li><a class="active" href="#">Bezahlung <i class="fas fa-circle"></i></a></li>
+				<li><a href="#">Bestätigen <i class="fas fa-circle"></i></a></li>
+			</ul>
+		</div>
+		
+		<div class="cards">
+			<div class="form">
+				<button onclick="sepaOpen()"><img alt="SEPA Lastschrift Logo" src="../images/lastschriftlogo-qf_rgb.png"><i class="fas fa-caret-right"></i> <span>Zahlung mit SEPA Lastschrift</span></button>
+				<div class="lowerform" id="sepa-form">
+					<form>
+						<p class="desc">Sie brauchen Ihre IBAN, um Ihr Bankkonto zu ergänzen. Die Informationen finden Sie auf Ihrem Kontoauszug oder Ihrer Bankkarte.</p>
+						<label>Kontoinhaber</label>
+						<input type="text" name="name" id="name" required placeholder="Erika Musterfrau">
+						
+						<label>IBAN</label>
+						<input type="text" name="iban" pattern="^[A-Za-z]{2}\s*\d{2}\s*\d{4}\s*\d{4}\s*\d{4}\s*\d{4}\s*\d{2}|[A-Za-z]{2}\d{20}$" placeholder="DE 01 1234 5678 9012 3456 78" title="Eine deutsche IBAN hat 22 Stellen und beginnt mit DE" required>
+
+						<input class="save" type="radio" id="save" value="save">
+  						<label for="save" class="save">Bankverbindung speichern?</label>
+						
+						<button class="submit" type="submit">Jetzt bezahlen</button>
+					</form>
+				</div>
+			</div>
+			
+			<div class="form">
+				<button onclick="visaOpen()"><img alt="SEPA Lastschrift Logo" src="../images/Visa-Logo-PNG-Image.png"><i class="fas fa-caret-down"></i> <span>Zahlung mit VISA</span></button>
+			  <div class="lowerform" id="visa-form">
+					<form>
+						<p class="desc">Sie brauchen Ihre IBAN, um Ihr Bankkonto zu ergänzen. Die Informationen finden Sie auf Ihrem Kontoauszug oder Ihrer Bankkarte.</p>
+						<label>Kontoinhaber</label>
+						<input type="text" name="name" id="name" required placeholder="Erika Musterfrau">
+						
+						<label>IBAN</label>
+						<input type="text" name="iban" pattern="^[A-Za-z]{2}\s*\d{2}\s*\d{4}\s*\d{4}\s*\d{4}\s*\d{4}\s*\d{2}|[A-Za-z]{2}\d{20}$" placeholder="DE 01 1234 5678 9012 3456 78" title="Eine deutsche IBAN hat 22 Stellen und beginnt mit DE" required>
+
+						<input class="save" type="radio" id="save" value="save">
+  						<label for="save" class="save">Bankverbindung speichern?</label>
+						
+						<button class="submit" type="submit">Jetzt bezahlen</button>
+					</form>
+				</div>
+			</div>
+						
+			<div class="form">
+			  <button onclick="mcOpen()"><img alt="SEPA Lastschrift Logo" src="../images/Mastercard-Logo-PNG-Image.png"><i class="fas fa-caret-down"></i> <span>Zahlung mit SEPA Lastschrift</span></button>
+			  <div class="lowerform" id="mc-form">
+					<form>
+						<p class="desc">Sie brauchen Ihre IBAN, um Ihr Bankkonto zu ergänzen. Die Informationen finden Sie auf Ihrem Kontoauszug oder Ihrer Bankkarte.</p>
+						<label>Kontoinhaber</label>
+						<input type="text" name="name" id="name" required placeholder="Erika Musterfrau">
+						
+						<label>IBAN</label>
+						<input type="text" name="iban" pattern="^[A-Za-z]{2}\s*\d{2}\s*\d{4}\s*\d{4}\s*\d{4}\s*\d{4}\s*\d{2}|[A-Za-z]{2}\d{20}$" placeholder="DE 01 1234 5678 9012 3456 78" title="Eine deutsche IBAN hat 22 Stellen und beginnt mit DE" required>
+
+						<input class="save" type="radio" id="save" value="save">
+  						<label for="save" class="save">Bankverbindung speichern?</label>
+						
+						<button class="submit" type="submit">Jetzt bezahlen</button>
+					</form>
+				</div>
+			</div>
+			
+	  </div>
+	
+</div>
+</div>	
+	<footer>
+		<nav class="navbar top">
+			<ul>
+				<li><a href="#">Datenschutz</a></li>
+				<li><a href="#">Impressum</a></li>
+			</ul>
+		</nav>
+	</footer>
+	
+</body>
+
