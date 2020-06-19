@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.sidemenu {
+#sidemenu {
     height: 100vh;
     transition: all 1s ease-in-out;
 
@@ -13,7 +13,34 @@
     z-index: 999;
 }
 
-.sidebar {
+#sidemenu p {
+	font-family: open-sans,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	color: #fff;
+	text-align: justify;
+	
+	padding: 0 5px;
+	margin: 32px 0;
+}
+
+#sidemenu h2 {
+	font-family: open-sans,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	
+	margin: 40px 0;
+}
+
+#sidemenu a {
+	color: #DB654B;
+}
+
+#sidebar {
     background: #282423;
     width: 450px;
     height: 100vh;
@@ -23,7 +50,7 @@
     border-radius: 0px 35px 35px 0px;
 }
 
-.paw {
+#paw {
     width: 60px;
     height: 60px;
     display: block;
@@ -38,7 +65,7 @@
     cursor: pointer;
 }
 
-.paw img {
+#paw img {
     height: auto;
     width: auto;
     margin: auto;
