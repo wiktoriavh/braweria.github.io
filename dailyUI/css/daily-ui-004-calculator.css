@@ -80,6 +80,10 @@ button {
     border: none;
 }
 
+.is-depressed {
+    background: #605656;
+}
+
 button:active {
     background: #605656;
 }
@@ -95,5 +99,6 @@ button:focus {
 
 .fas {
     font-size: 30px;
+    pointer-events: none;
 }
 
