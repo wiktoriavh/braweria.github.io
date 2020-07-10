@@ -95,6 +95,7 @@ kbd {
 .btn {
 	padding: 15px 20px;
 	border-radius: 10px;
+	width: 100px;
 	border: none;
 	margin: 10px;
 	background: #f8b59e8f;
