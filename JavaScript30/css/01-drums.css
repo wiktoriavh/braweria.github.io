@@ -1,0 +1,62 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: url("../img/josh-sorenson-MjIMc6uhwrE-unsplash.jpg");
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	height: 100vh;
+}
+
+.drum {
+	
+	display: flex;
+	flex-direction: row;
+}
+
+.key {
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;;
+	background: #ffe8e58f;
+	margin: 10px;
+	transition: all .05s;
+}
+
+kbd {
+	font-size: 30px;
+	font-family: monospace;
+	font-weight: 700;
+	color: #380424;
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.sound {
+	color: #471c17;
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-top: 15px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family: sans-serif;
+	font-size: 13px;
+	
+}
+
+.clap {
+	box-shadow: 0 0 2em #fff1e5d7;
+	box-shadow: 0 0 2em #ffbdfad7;
+	box-shadow: 0 0 2em #f8b59ed7;
+	background: #fcb4f68f;
+	background: #f8b59e8f;
+	transform: scale(1.1);
+}
