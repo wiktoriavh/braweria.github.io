@@ -82,3 +82,10 @@ kbd {
 .credit a {
 	color: #f8b59e;
 }
+
+@media (max-width: 1080px) {
+	.drum {
+		flex-wrap: wrap;
+		width: 360px;
+	}
+}
