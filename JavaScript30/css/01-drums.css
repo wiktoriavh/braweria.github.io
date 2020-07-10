@@ -28,7 +28,7 @@ body {
 	width: 100px;
 	height: 100px;
 	border-radius: 10px;;
-	background: #ffe8e58f;
+	background: #ffe8e5b7;
 	margin: 10px;
 	transition: all .05s;
 }
@@ -61,10 +61,7 @@ kbd {
 }
 
 .clap {
-	box-shadow: 0 0 2em #fff1e5d7;
-	box-shadow: 0 0 2em #ffbdfad7;
 	box-shadow: 0 0 2em #f8b59ed7;
-	background: #fcb4f68f;
 	background: #f8b59e8f;
 	transform: scale(1.1);
 }
@@ -75,4 +72,13 @@ kbd {
 	bottom: 15px;
 	right: 15px;
 	user-select:none;
+	background: #00000065;
+	border-radius: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+	color: white;
+}
+
+.credit a {
+	color: #f8b59e;
 }
