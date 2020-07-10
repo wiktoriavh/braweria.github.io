@@ -16,10 +16,11 @@ body {
 	justify-content: center;
 	align-content: center;
 	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .drum {
-	
 	display: flex;
 	flex-direction: row;
 }
@@ -81,6 +82,34 @@ kbd {
 
 .credit a {
 	color: #f8b59e;
+}
+
+.metronom {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	bottom: 15px;
+}
+
+.btn {
+	padding: 15px 20px;
+	border-radius: 10px;
+	border: none;
+	margin: 10px;
+	background: #f8b59e8f;
+	color: #380424;
+	font-weight: 700;
+	cursor: inherit;
+	user-select: none;
+}
+
+
+
+.btn.active, .btn:active {
+	outline: none;
+	border: none;
+	background: #f8b59e;
 }
 
 @media (max-width: 1080px) {
