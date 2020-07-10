@@ -60,3 +60,10 @@ kbd {
 	background: #f8b59e8f;
 	transform: scale(1.1);
 }
+
+.credit {
+	display: block;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+}
