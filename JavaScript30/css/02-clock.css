@@ -5,6 +5,7 @@ To-Do
 [ ] Dynamic Background
 
 ??? Problem: Firefox stops ticking when switching tabs and then continues ticking from last position and does not update
+	I was told that. When testing on my own it worked fine.
 			
 
 ##Version 1.1
@@ -22,7 +23,7 @@ html {
 }
 
 body {
-	background: url("/img/jake-givens-ocwmWiNAWGs-unsplash.jpg");
+	background: url("../img/jake-givens-ocwmWiNAWGs-unsplash.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100%;
