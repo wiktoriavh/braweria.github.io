@@ -1,12 +1,11 @@
 /*
 To-Do
-[ ] Problem: Clock stops ticking when switching tabs and then jumps to the current position
-[ ] Problem: Microsoft Edge always starts ticking from the beginning and not last position
+
+[ ] Problem: Microsoft Edge always starts ticking from a different point instead of the last position
 [ ] Dynamic Background
 
-??? Problem: Firefox stops ticking when switching tabs and then continues ticking from last position and does not update
-	I was told that. When testing on my own it worked fine.
-			
+##Version 1.1.a
+-- included credit to image
 
 ##Version 1.1
 Problem: When changing from 59sec to 0sec it rotated into the wrong direction, because it changes from 444 to 90 degrees.
@@ -80,4 +79,21 @@ body {
 	width: 50%;
 	height: 4px;
 	top: calc(50% - 2px);
+}
+
+.credit {
+	display: block;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	user-select:none;
+	background: #b83b5e;
+	border-radius: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+	color: white;
+}
+
+.credit a {
+	color: #ffdde7;
 }
