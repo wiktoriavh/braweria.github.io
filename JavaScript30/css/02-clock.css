@@ -1,12 +1,4 @@
 /*
-To-Do
-
-[ ] Problem: Microsoft Edge always starts ticking from a different point instead of the last position
-[ ] Dynamic Background
-
-##Version 1.1.a
--- included credit to image
-
 ##Version 1.1
 Problem: When changing from 59sec to 0sec it rotated into the wrong direction, because it changes from 444 to 90 degrees.
 -- fixed
@@ -22,7 +14,7 @@ html {
 }
 
 body {
-	background: url("../img/jake-givens-ocwmWiNAWGs-unsplash.jpg");
+	background-image: url("../img/jake-givens-ocwmWiNAWGs-unsplash.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100%;
