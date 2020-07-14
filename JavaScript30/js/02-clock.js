@@ -20,7 +20,7 @@ function setDate() {
 	const minDeg = ((minutes / 60) * 360) + 90;
 	const hourDeg = ((hours / 12) * 360) + 90;
 
-	
+
 
 	if (secDeg === 90) {
 		secHand.style.transform = `rotate(450deg)`;
@@ -34,9 +34,10 @@ function setDate() {
 	minHand.style.transform = `rotate(${minDeg}deg)`;
 	hourHand.style.transform = `rotate(${hourDeg}deg)`;
 
-	stop(true, true);
-
 	
 }
+window.onload = function() {
 setInterval(setDate, 1000);
+
 setDate();
+}
