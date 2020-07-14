@@ -1,28 +1,30 @@
 /*
-##Version 1.1
-Problem: When changing from 59sec to 0sec it rotated into the wrong direction, because it changes from 444 to 90 degrees.
--- fixed
-
-
-##Version 1.0
--- created a clock
-
+JavaScript30 by Wesbos
+Exercise 02 and 03:
+	- CSS + JS Clock
+	- Playing with CSS Variables and JS
 */
+
+:root {
+	--clock: #bf9d43;
+	/* #131862 Night */
+}
+
 
 html {
 	height: 100%;
 }
 
 body {
-	background-image: url("../img/jake-givens-landscape-sunrise-unsplash.jpg");
+	background: url("../img/gabriele-motter-q3rUTmpZB-Q-unsplash.jpg"); 
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center center;
 	height: 100%;
 	width: 100%;
 
-	/*backdrop-filter: blur(5px);
-	-moz-backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);*/
+	margin: 0;
+	padding: 0;
 
 	display: flex;
 	justify-content: center;
@@ -34,13 +36,20 @@ body {
 .clock {
 	width: 400px;
 	height: 400px;
-	border: 20px solid #b83b5e;
+	border: 20px solid var(--clock);
 	border-radius: 50%;
 	padding: 15px;
 	position: relative;
 
 	background: hsla(0, 0%, 100%, 0.3);
 	overflow: hidden;
+}
+
+@media (max-width: 500px) {
+	.clock {
+		width: 250px;
+		height: 250px;
+	}
 }
 
 .face {
@@ -52,7 +61,7 @@ body {
 .hand {
 	width: 50%;
 	height: 8px;
-	background-color: #b83b5e;
+	background-color: var(--clock);
 	position: absolute;
 	top: 50%;
 	border-radius: 50px;
@@ -80,14 +89,20 @@ body {
 	position: absolute;
 	bottom: 15px;
 	right: 15px;
+
 	user-select:none;
-	background: #b83b5e;
+	
+	background: white;
 	border-radius: 10px;
 	padding: 10px;
 	box-sizing: border-box;
-	color: white;
+	backdrop-filter: blur(5px);
+	filter: opacity(70%);
+
+	color: black;
+	font-family: sans-serif;
 }
 
 .credit a {
-	color: #ffdde7;
+	color: black;
 }
