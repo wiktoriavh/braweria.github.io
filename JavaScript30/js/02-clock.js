@@ -36,8 +36,7 @@ function setDate() {
 
 	
 }
-window.onload = function() {
-setInterval(setDate, 1000);
-
-setDate();
-}
+document.addEventListener('DOMContentLoaded', () => {
+  setInterval(setDate, 1000);
+  setDate();
+});
