@@ -36,7 +36,7 @@ function setDate() {
 
 	stop(true, true);
 
-	setInterval(setDate, 1000);
+	
 }
-
+setInterval(setDate, 1000);
 setDate();
