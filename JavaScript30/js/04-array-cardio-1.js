@@ -84,12 +84,7 @@ console.log(data);
 	  //			  .filter(a => { return a.includes("de") });
   
 	  console.log("#5 Paste the following code into the console of the webpage:");
-	  console.log("const cat = document.querySelector('.mw-category');");
-	  console.log("const links = Array.from(cat.querySelectorAll('a'));");
-	  console.log("const de = links")
-	  console.log(".map(link => { return link.textContent })");
-	  console.log(".filter(a => { return a.includes('de') });");
-	  console.log("console.log(de)");
+	  console.log('const cat = document.querySelector(".mw-category");  const links = Array.from(cat.querySelectorAll("a"));	  const de = links.map(link => { return link.textContent }) .filter(a => { return a.includes("de") }); console.log(de);')
 
 
 	  // 7. sort Exercise
