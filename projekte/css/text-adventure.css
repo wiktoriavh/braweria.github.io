@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: monospace;
+	text-align: center;
+}
+
+body,
+html {
+	height: 100%;
+}
+
+main {
+	margin: 0 auto;
+	width: 1000px;
+
+	height: 100%;
+	padding: 100px 0px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#path {
+	font-size: 2em;
+	flex: 2;
+}
+
+.options {
+	flex: 1;
+
+	height: 150px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.options button {
+	height: 60px;
+	width: auto;
+	flex: 1;
+
+	border: none;
+	background: #31cb00;
+	color: #152614;
+
+	font-size: 1.5em;
+}
+
+.options #a {
+	margin: 0 15px 0 0;
+}
+
+.options #c {
+	margin: 0 0 0 15px;
+}
+
+#a .hide,
+#b .hide,
+#c .hide,
+.hide {
+	display: none;
+}
+
+#items {
+	height: 150px;
+	display: flex;
+	align-items: center;
+	flex: 1;
+}
+
+#items * {
+	margin-right: 20px;
+	display: block;
+	font-size: 1.5em;
+	height: 20px;
+	width: 20px;
+}
+
+#items > span {
+	width: auto;
+}
+
+#items .fa-shopping-bag,
+#items .fa-egg,
+#items .fa-hand-holding-water,
+#items .fa-fan,
+#items .fa-tree,
+#items .bag {
+	display: none;
+}
+
+#items .active, .active {
+	display: block;
+}
