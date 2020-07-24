@@ -15,7 +15,7 @@ Auf meiner Hauptwebseite, <a href="https://braweria.de/?utm_source=github&utm_me
 - [Landingpage](https://braweria.github.io/dailyUI/daily-ui-003.html): Eine Landingpage mit großen und freundlichen Buttons, damit Kinder einfacher dadurch navigieren können.
 - [Taschenrechner](https://braweria.github.io/dailyUI/daily-ui-004.html): Ein einfacher Taschenrechner.
 ### JavaScript 30 Day Challenge
-- [Drum Kit](https://github.com/Braweria/braweria.github.io/JavaScript30/01-drums.html): Spiele ein virtuelles Drum Kit.
+- [Drum Kit](https://github.com/Braweria/braweria.github.io/JavaScript30/01-drums.html): Spiele ein virtuelles Drum Kit. [[#1](../../issues/1)]
 - [Uhr](https://github.com/Braweria/braweria.github.io/JavaScript30/02-clock.html): Zeigt die Uhrzeit an, mit dynamischem Hintergrund.
 - [Array Cardio 1](https://github.com/Braweria/braweria.github.io/JavaScript30/04-array-cardio-1.html): Übung für Arrays 1.
 - [Flex Panels](https://github.com/Braweria/braweria.github.io/JavaScript30/05-flex-panels.html): Übung mit Flexbox.
