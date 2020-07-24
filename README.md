@@ -4,6 +4,8 @@ Direkt Link zur Webseite: <a href="https://braweria.github.io/?utm_source=github
 ## Einführung
 Auf meiner Hauptwebseite, <a href="https://braweria.de/?utm_source=github&utm_medium=readme&utm_campaign=braweria-website">braweria.de</a>, führe ich mein Portfolio und Blog, während ich mit Github Pages meine Web Dev Projekte darstelle. Ich arbeite hier mit **HTML5**, **CSS3** und **JavaScript** (ES6).
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/80/HTML5_logo_resized.svg" alt="HTML5 Logo" height="40px"/>   <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Html5_css3_styling.svg" alt="CSS3 Logo" height="30px"/>   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript / ES6 Logo" height="30px"/>
+
 ## Projekte & Herausforderungen
 ### Fiktive Projekte
 - [Text Adventure](https://braweria.github.io/projekte/text-adventure.html): Spiele als Marie und hilf dem Dilladapp seine Zutaten zu finden, damit das Fest ein voller Erfolg wird.
